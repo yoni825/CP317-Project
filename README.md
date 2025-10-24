@@ -1,69 +1,59 @@
-# 🚗 Car Rental System (CP317)
+# 🚗 Car Rental System
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
-![Flask](https://img.shields.io/badge/Flask-web_framework-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/status-active-success)
-![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen)
-
-A **Python-based** web application that lets **customers** search and reserve vehicles and gives the **rental company** tools to monitor daily rentals, track fleet utilization, and analyze customer preferences.
-
----
-
-## 📌 Table of Contents
-- [About](#-about)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [How to Run](#how-to-run)
-  - [Seed & Admin Account](#seed--admin-account)
-
-- [Team](#-team)
+## 📘 Table of Contents
+- [About](#about)
+- [Purpose](#purpose)
+- [Features](#features)
+- [Objectives](#objectives)
+- [Team](#team)
 
 ---
 
-## 🧠 About
-The **Car Rental System** is built for **CP317** to demonstrate an end-to-end software product using **Python**  
-It focuses on **clear user journeys** (search → reserve → manage bookings) and **operational insights** (daily rentals, utilization, and customer preferences).
+## 🧩 About
+The **Car Rental System** is a Python-based software project developed for **CP317 – Software Engineering Fundamentals**.  
+It is designed to make vehicle rentals efficient for both customers and the rental company.  
+Customers can easily browse and reserve cars, while the company can manage rentals, monitor fleet utilization, and analyze customer preferences.
 
-**Objectives**
-- Customers can **search** available cars by category/type & date range, **reserve**, and **view rental history**.
-- Company staff can **monitor daily rentals**, **track utilization by vehicle type**, and **analyze customer preferences**.
+---
+
+## 🎯 Purpose
+The goal of this project is to build a simple, user-focused system that demonstrates the core principles of software engineering — including planning, teamwork, and iterative development.  
+It provides an end-to-end solution for car rental management, showcasing how Python can be used to implement real-world business logic in a clean and maintainable way.
 
 ---
 
 ## 🔑 Features
-**Customer**
-- 🔎 Search cars by **type/category**, location, and dates  
-- 📝 Reserve & cancel bookings (with conflict checks)  
-- 🧾 View rental history (upcoming, active, completed, canceled)
+### 👤 For Customers
+- Search available cars by type or category  
+- Reserve cars for chosen dates  
+- View and manage rental history  
 
-**Company / Admin**
-- 📅 Daily rentals dashboard (pickups/returns)  
-- 📈 Utilization reporting by vehicle category  
-- 📊 Customer preference analytics (search → reservation funnel)  
-- 🚗 Vehicle inventory management (CRUD, maintenance flag)
-
-**Quality of Life**
-- 🔐 JWT auth (roles: `customer`, `staff`, `manager`)  
-- 🧪 Unit & integration tests (Pytest)  
-- 🧰 Seed script for demo data
+### 🏢 For the Company
+- Monitor daily rentals and car availability  
+- Track vehicle utilization by category  
+- Analyze customer rental trends and preferences  
 
 ---
 
-## 🧱 Tech Stack
-- **Language:** Python 3.10+
-- **Framework:** Flask (Blueprints, Jinja2)
-- **Database:** SQLite (dev) / MySQL or PostgreSQL (prod)
-- **ORM:** SQLAlchemy + Alembic (migrations)
-- **Auth:** Flask-JWT-Extended
-- **Styling (optional):** Bootstrap
-- **Analytics:** SQL aggregation + optional Pandas
-- **Testing:** Pytest
+## 🎯 Objectives
+1. Create a clear and user-friendly rental interface  
+2. Implement a working reservation and history system  
+3. Provide tools for monitoring and analytics  
+4. Ensure data security, accessibility, and fairness  
+5. Demonstrate effective teamwork and agile methodology  
 
 ---
 
-## 🗂 Project Structure
+## 👥 Team
+**Project Title:** Car Rental System  
+**Course:** CP317 – Software Engineering Fundamentals  
+
+**Team Members**
+- Yonathan Tekle – Product Owner / Developer  
+- [Add teammate name] – Developer  
+- [Add teammate name] – Developer  
+- [Add teammate name] – QA / Documentation  
+
+---
+
+*Developed as part of the CP317 group project following Scrum methodology.*
