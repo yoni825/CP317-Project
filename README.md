@@ -9,20 +9,19 @@
 
 ---
 
-## About
+## About 🧩
 The **Car Rental System** is a Python-based software project developed for **CP317 – Software Engineering Fundamentals**.  
 It is designed to make vehicle rentals efficient for both customers and the rental company.  
-Customers can easily browse and reserve cars, while the company can manage rentals, monitor fleet utilization, and analyze customer preferences.
+Customers can easily browse and reserve cars, while the company can manage rentals, monitor car inventory, and view customer preferences.
 
 ---
 
-## Purpose
-The goal of this project is to build a simple, user-focused system that demonstrates the core principles of software engineering — including planning, teamwork, and iterative development.  
-It provides an end-to-end solution for car rental management, showcasing how Python can be used to implement real-world business logic in a clean and maintainable way.
+## Purpose 🎯
+Building a simple, user-friendly system that demonstrates the basics of software engineering, such as planning, collaboration, and continuous improvement, is the goal of this project.
 
 ---
 
-## Features
+## 🔑 Features
 ### For Customers
 - Search available cars by type or category  
 - Reserve cars for chosen dates  
@@ -35,7 +34,7 @@ It provides an end-to-end solution for car rental management, showcasing how Pyt
 
 ---
 
-## Objectives
+##  🎯 Objectives
 1. Create a clear and user-friendly rental interface  
 2. Implement a working reservation and history system  
 3. Provide tools for monitoring and analytics  
@@ -46,14 +45,14 @@ It provides an end-to-end solution for car rental management, showcasing how Pyt
 
 ## Team
 **Project Title:** Car Rental System  
-**Course:** CP317 – Software Engineering Fundamentals  
+**Course:** CP317 
 
 **Team Members**
-- Yonathan Tekle – Product Owner / Developer  
-- [Add teammate name] – Developer  
-- [Add teammate name] – Developer  
-- [Add teammate name] – QA / Documentation  
+- [Brian] 
+- [James]
+- [Kevin]   
+- [Yonathan] 
 
 ---
 
-*Developed as part of the CP317 group project following Scrum methodology.*
+*Developed as part of the CP317 group project*
