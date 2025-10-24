@@ -10,9 +10,7 @@
 ---
 
 ## About 🧩
-The **Car Rental System** is a Python-based software project developed for **CP317 – Software Engineering Fundamentals**.  
-It is designed to make vehicle rentals efficient for both customers and the rental company.  
-Customers can easily browse and reserve cars, while the company can manage rentals, monitor car inventory, and view customer preferences.
+The **Car Rental System** is a Python-based software project developed to make vehicle rentals efficient for both customers and the rental company. Customers can easily browse and reserve cars, while the company can manage rentals, monitor car inventory, and view customer preferences.
 
 ---
 
