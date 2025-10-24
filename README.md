@@ -20,17 +20,13 @@ A **Python-based** web application that lets **customers** search and reserve ve
   - [Setup](#setup)
   - [How to Run](#how-to-run)
   - [Seed & Admin Account](#seed--admin-account)
-- [Usage](#-usage)
-- [Screenshots](#-screenshots)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
+
 - [Team](#-team)
 
 ---
 
 ## 🧠 About
-The **Car Rental System** is built for **CP317** to demonstrate an end-to-end software product using **Python + Flask**.  
+The **Car Rental System** is built for **CP317** to demonstrate an end-to-end software product using **Python**  
 It focuses on **clear user journeys** (search → reserve → manage bookings) and **operational insights** (daily rentals, utilization, and customer preferences).
 
 **Objectives**
