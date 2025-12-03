@@ -1,0 +1,12 @@
+[
+    {
+        "username": "snazbear",
+        "password_hash": "9b8769a4a742959a2d0298c36fb70623f2dfacda8436237df08d8dfd5b37374c",
+        "email": "snazbear@example.com"
+    },
+    {
+        "username": "james",
+        "password_hash": "7b4469f47b8830bbff0360e770a91478b14a0e46057455e53a71f3cb921a5540",
+        "email": "james@example.com"
+    }
+]
