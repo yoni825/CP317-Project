@@ -63,7 +63,6 @@ class Reservation:
         )
 
 
-# -------------------- Persistence --------------------
 
 def save_reservations(reservations):
     """

@@ -3,7 +3,7 @@ from copy import deepcopy
 class Car:
     # Constants
     TYPES_OF_CAR = ("SUV", "Truck", "Mid size", "Luxury")
-    TYPES_OF_FUEL = ("Gasoline", "Dieseal", "Electric")  # keep spelling to match rest of code
+    TYPES_OF_FUEL = ("Gasoline", "Dieseal", "Electric")  # kept spelling to match rest of code
 
     def __init__(self, id, type, fuel, passengers, rent, avalible, year, name, picture):
         """
@@ -40,7 +40,6 @@ class Car:
         """
         Returns car type as a STRING, e.g. 'SUV', 'Truck', etc.
         """
-        # Map int code to label; fallback if out of range
         try:
             return deepcopy(self.TYPES_OF_CAR[self.type])
         except (IndexError, TypeError):
@@ -48,7 +47,7 @@ class Car:
 
     def getfuel(self):
         """
-        Returns fuel type as a STRING, e.g. 'Gasoline', 'Dieseal', 'Electric'.
+        Returns fuel type as a STRING: 'Gasoline', 'Dieseal', 'Electric'.
         """
         try:
             return deepcopy(self.TYPES_OF_FUEL[self.fuel])
@@ -78,7 +77,7 @@ class Car:
     def getpicture(self):
         """Returns picture id (int)."""
         return deepcopy(self.pic)
-def set_availability(self, available: bool) -> None:
+
+    def set_availability(self, available: bool) -> None:
         """Sets the availability of the car."""
-        self.avl = deepcopy(available)  
-        
+        self.avl = deepcopy(available)

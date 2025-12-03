@@ -88,7 +88,7 @@ def main():
     # -----------------------------------------------
     cars = [
         Car(1, 0, 0, 5, 80.0,  True, 2022, "Toyota RAV4",    101),  # SUV, Gasoline
-        Car(2, 1, 1, 2, 95.5,  False,2018, "Ford F-150",     102),  # Truck, Dieseal, unavailable
+        Car(2, 1, 1, 2, 95.5,  True,2018, "Ford F-150",     102),  # Truck, Dieseal, unavailable
         Car(3, 3, 2, 4, 150.0, True, 2023, "Tesla Model S",  103),  # Luxury, Electric
         Car(4, 0, 0, 5, 55.0,  True, 2020, "Toyota Corolla", 104),  # SUV, Gasoline
         Car(5, 2, 0, 4, 45.0,  True, 2021, "Honda Fit",      105),  # Mid size, Gasoline
