@@ -27,7 +27,6 @@ Building a simple, user-friendly system that demonstrates the basics of software
 
 ### For the Company
 - Monitor daily rentals and car availability  
-- Track vehicle utilization by category  
 - Analyze customer rental trends and preferences  
 
 ---
@@ -48,7 +47,8 @@ Building a simple, user-friendly system that demonstrates the basics of software
 **Team Members**
 - [Brian] 
 - [James]
-- [Kevin]   
+- [Kevin]
+- [Naeem]   
 - [Yonathan] 
 
 ---
