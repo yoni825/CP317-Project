@@ -27,7 +27,7 @@ Building a simple, user-friendly system that show the basics of software enginee
 
 ### For the Company
 - Monitor daily rentals and car availability  
-- Analyze customer rental trends and preferences  
+- Analyze customer rental preferences  
 ---
 
 ##  Objectives
