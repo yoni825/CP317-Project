@@ -14,6 +14,7 @@ from backend.reservation import (
     load_reservations,
     get_user_reservations,
     get_all_reservations,
+    cancel_reservation,
 )
 from backend.user_account import UserAccount, load_users, save_users
 from backend.customer_analysis import (
@@ -76,7 +77,7 @@ def run_app():
     current_user = None
 
     print("==============================================")
-    print("        Welcome to the Car Rental System      ")
+    print("        Welcome to RideReady!                 ")
     print("==============================================\n")
 
     # -----------------------------------------------
@@ -157,20 +158,41 @@ def run_app():
             print("Goodbye!")
             break
 
-        # ------------------ View my rental history ------------------
+        # ------------------ View my rental history (with cancel) ------------------
         if menu_choice == "3":
             my_res = get_user_reservations(reservations, current_user.username)
             if not my_res:
                 print("\nYou have no past reservations yet.\n")
-            else:
-                print("\n=== Your Rental History ===\n")
-                for r in my_res:
-                    print(f"Reservation ID: {r.res_id}")
-                    print(f"Car: {r.car.getname()} (ID: {r.car.getid()})")
-                    print(f"Dates: {r.start_date} → {r.end_date}")
-                    print(f"Total Price: ${r.total_price:.2f}")
-                    print("-" * 40)
+                continue
+
+            print("\n=== Your Rental History ===\n")
+            for r in my_res:
+                print(f"Reservation ID: {r.res_id}")
+                print(f"Car: {r.car.getname()} (ID: {r.car.getid()})")
+                print(f"Dates: {r.start_date} → {r.end_date}")
+                print(f"Total Price: ${r.total_price:.2f}")
+                print("-" * 40)
+
+            # Ask if they want to cancel one
+            choice = input("\nWould you like to cancel one of these reservations? (y/n): ").strip().lower()
+            if choice != "y":
                 print()
+                continue
+
+            try:
+                res_id_str = input("Enter the Reservation ID to cancel: ").strip()
+                res_id = int(res_id_str)
+            except ValueError:
+                print("Invalid Reservation ID.\n")
+                continue
+
+            success = cancel_reservation(reservations, res_id, current_user.username)
+
+            if success:
+                print("\n✅ Reservation cancelled successfully.\n")
+            else:
+                print("\n❌ Could not find a reservation with that ID for your account.\n")
+
             continue
 
         # ------------------ Admin: view all reservations ------------------

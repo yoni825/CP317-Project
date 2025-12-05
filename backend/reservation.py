@@ -113,7 +113,6 @@ def load_reservations(cars):
     return reservations
 
 
-
 def reserve_car(cars, reservations, car_id, user_name, start_str, end_str):
     """
     Create a reservation if possible and save it.
@@ -188,3 +187,76 @@ def get_all_reservations(reservations):
     Return a copy of all reservations.
     """
     return list(reservations)
+
+def cancel_reservation(reservations, res_id, user_name):
+    """
+    Cancel a reservation for the given user and reservation ID.
+
+    - Removes the reservation from the in-memory list
+    - Marks the associated car as available again
+    - Saves the updated reservations to data/reservations.json
+
+    Returns:
+        True  if a reservation was found and cancelled
+        False otherwise
+    """
+    target = None
+
+    for r in reservations:
+        if r.res_id == res_id and r.user_name == user_name:
+            target = r
+            break
+
+    if target is None:
+        return False
+
+    # Mark the car as available again
+    # (simple logic: since we don't handle overlapping dates,
+    #  we just free the car when the reservation is cancelled)
+    if hasattr(target.car, "set_availability"):
+        target.car.set_availability(True)
+    else:
+        # fallback if set_availability doesn't exist for some reason
+        target.car.avl = True
+
+    # Remove the reservation and persist
+    reservations.remove(target)
+    save_reservations(reservations)
+
+    return True
+
+def cancel_reservation_by_id(reservations, res_id):
+    """
+    Cancel a reservation by Reservation ID (admin use).
+
+    - Finds the reservation with the given ID
+    - Marks the car as available again
+    - Removes the reservation from the list
+    - Saves the updated reservations
+
+    Returns:
+        True  if a reservation was found and cancelled
+        False otherwise
+    """
+    target = None
+
+    for r in reservations:
+        if r.res_id == res_id:
+            target = r
+            break
+
+    if target is None:
+        return False
+
+    # Mark the car as available again
+    if hasattr(target.car, "set_availability"):
+        target.car.set_availability(True)
+    else:
+        target.car.avl = True
+
+    # Remove and save
+    reservations.remove(target)
+    save_reservations(reservations)
+
+    return True
+
