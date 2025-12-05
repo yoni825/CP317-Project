@@ -1,4 +1,3 @@
-# frontend/frontend_cli.py
 # -------------------------------------------------------
 # Car Rental System - Frontend (CLI Interface)
 # -------------------------------------------------------
@@ -55,8 +54,7 @@ def list_available_cars(cars) -> None:
     for c in available_cars:
         print_car_details(c)
 
-
-# ---------------- Main Frontend Flow ---------------- #
+# ---------------- Main Frontend ---------------- #
 
 def run_app():
     """

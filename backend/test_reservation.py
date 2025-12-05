@@ -42,7 +42,6 @@ def build_cars():
 def main():
     print("=== Rental History Persistent Test ===\n")
 
-    # ----------------- Step 1: load existing data -----------------
     cars = build_cars()
     reservations = load_reservations(cars)
 
@@ -58,7 +57,6 @@ def main():
         print("  (No reservations yet.)")
     print("-" * 40)
 
-    # ----------------- Step 2: find an available car -----------------
     available_cars = [c for c in cars if c.is_avalible()]
     if not available_cars:
         print("⚠ No available cars to test reservation creation.")

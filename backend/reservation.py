@@ -16,7 +16,6 @@ from datetime import datetime
 from pathlib import Path
 import json
 
-# Path to the persistent reservations file (data folder)
 DATA_DIR = Path("data")
 RESERVATION_FILE = DATA_DIR / "reservations.json"
 
