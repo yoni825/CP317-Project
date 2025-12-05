@@ -19,7 +19,7 @@ Building a simple, user-friendly system that show the basics of software enginee
 
 ---
 
-## 🔑 Features
+## Features
 ### For Customers
 - Search available cars by type or category  
 - Reserve cars for chosen dates  
@@ -31,7 +31,7 @@ Building a simple, user-friendly system that show the basics of software enginee
 ---
 
 ##  Objectives
-1. Create a clear and user-friendly rental interface  
+1. clear and user-friendly rental interface  
 2. Implement a working reservation and history system  
 3. Provide tools for monitoring and analytics  
 ---
@@ -41,11 +41,11 @@ Building a simple, user-friendly system that show the basics of software enginee
 **Course:** CP317 
 
 **Team Members**
-- [Brian] [https://github.com/brianvnontario]
-- [James]
-- [Kevin]
-- [Naeem]   
-- [Yonathan][https://github.com/yoni825]
+- Brian 
+- James
+- Kevin
+- Naeem   
+- Yonathan
 ---
 
 *Created as part of the CP317 group project*
