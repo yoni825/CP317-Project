@@ -1,17 +1,15 @@
 # -------------------------------------------------------
-# Rental Car search 
+# Rental Car Search - Backend
 # -------------------------------------------------------
-# This file contains the search function rental cars.
-# Different filters such as type, fuel, year, price, seats,
-# and availability.
+# Provides full search/filtering over a list of Car objects.
+# Filters include: type, fuel, year range, seat count,
+# price range, availability, and name matching.
 # -------------------------------------------------------
-
-from copy import deepcopy
 
 def search_cars(
     cars,
-    type=None,             
-    fuel=None,             
+    type=None,
+    fuel=None,
     year_min=None,
     year_max=None,
     min_seats=None,
@@ -55,6 +53,7 @@ def search_cars(
         if name_contains is not None and name_contains.lower() not in c.getname().lower():
             continue
 
-        results.append(deepcopy(c))
+        # Append the REAL car object, not a deepcopy
+        results.append(c)
 
     return results

@@ -47,7 +47,7 @@ def analyze_customer_preferences(reservations):
         'popular_fuels': dict(fuel_counts)
     }
 
-    return deepcopy(analysis)
+    return analysis
 
 def display_preference_report(analysis):
     """
