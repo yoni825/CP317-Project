@@ -41,11 +41,11 @@ Building a simple, user-friendly system that show the basics of software enginee
 **Course:** CP317 
 
 **Team Members**
-- [Brian] 
+- [Brian] [https://github.com/brianvnontario]
 - [James]
 - [Kevin]
 - [Naeem]   
-- [Yonathan] 
+- [Yonathan][https://github.com/yoni825]
 ---
 
 *Created as part of the CP317 group project*
