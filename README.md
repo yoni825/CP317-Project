@@ -11,7 +11,7 @@
 ---
 
 ## About 
-The **RideReady** is a Python software project made to make vehicle rentals quick for both customers and the rental company. Customers can easily browse and reserve cars, while the company can manage rentals, monitor car inventory, and view customer preferences.
+**RideReady** is a Python software project made to make vehicle rentals quick for both customers and the rental company. Customers can easily browse and reserve cars, while the company can manage rentals, monitor car inventory, and view customer preferences.
 
 ---
 
