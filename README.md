@@ -33,7 +33,7 @@ Building a simple, user-friendly system that show the basics of software enginee
 
 ## How to run 
 **Prerequisites**: 
-- Pyhon 3.10 higher installed
+- Python 3.10 higher installed
 - Windows, MacOS, or Linux
 - No external libraries required
 - Run program from root (Main.py)
