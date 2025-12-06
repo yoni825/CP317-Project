@@ -4,6 +4,7 @@
 - [About](#about)
 - [Purpose](#purpose)
 - [Features](#features)
+- [How to run](#How-to-run)
 - [Objectives](#objectives)
 - [Team](#team)
 
@@ -27,7 +28,39 @@ Building a simple, user-friendly system that show the basics of software enginee
 
 ### For the Company
 - Monitor daily rentals and car availability  
-- Analyze customer rental preferences  
+- Analyze customer rental preferences
+---
+
+## How to run 
+**Prerequisites**: 
+- Pyhon 3.10 higher installed
+- Windows, MacOS, or Linux
+- No external libraries required
+- Run program from root (Main.py)
+
+Step 1 — Download or Clone the Project
+
+Option A – Clone using Git:
+git clone https://github.com/yoni825/CP317-Project.git
+
+Option B – Download ZIP
+
+Step 2 — Open the Project Folder
+Open a terminal and navigate into the project:
+cd CP317-Project
+
+Step 3 — Run the Application
+Run the program with:
+python main.py
+or on some systems:
+python3 main.py
+
+Step 4 — Login or Register
+When the program starts you may register a new user OR use the default admin account:
+
+- <font color="red"><b>username: admin</b></font>
+- <font color="red"><b>password: admin123</b></font>
+
 ---
 
 ##  Objectives
